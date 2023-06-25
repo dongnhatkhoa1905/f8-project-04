@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../Gulp-HTML"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "f8-project-04"
+    }
+}

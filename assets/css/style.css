@@ -19,6 +19,12 @@ h6 {
     font-family: "Sora", sans-serif;
 }
 
+figure {
+    padding: 0px !important;
+    margin: 0px !important;
+    border: none;
+}
+
 input,
 textarea,
 button,
@@ -302,7 +308,7 @@ a {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1;
-    color: #48496A;
+    color: #48496a;
 }
 
 .about__check-item::before {
@@ -324,6 +330,73 @@ a {
     width: 6px;
     height: 13px;
     rotate: 45deg;
-    border-right: 2px solid #fff ;
+    border-right: 2px solid #fff;
     border-bottom: 2px solid #fff;
+}
+
+.about__media {
+    position: relative;
+}
+
+.about__card {
+    position: absolute;
+    top: 165px;
+    left: -115px;
+    display: block;
+    width: 136px;
+    height: 156px;
+    background: #5bd6e2;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about__card-title {
+    display: inline-block;
+    padding-top: 31px;
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1;
+    color: #fff;
+}
+
+.about__card-desc {
+    width: 83px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    line-height: 1.42;
+    color: #c6f4f9;
+}
+
+.about__card-decorator {
+    top: 0;
+}
+
+.about__card-decorator {
+    position: relative;
+    top: -156px;
+    right: -62px;
+}
+
+.about__img-wrap {
+    position: relative;
+    display: flex;
+}
+
+.about__img-wrap::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 494px;
+    height: 326px;
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+    border-radius: 16px;
+    z-index: -1;
+    bottom: 0;
+}
+
+.about__media-decorator {
+    position: absolute;
+    top: 149px;
+    right: 40px;
+    z-index: -1;
 }
