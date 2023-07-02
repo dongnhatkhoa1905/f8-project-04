@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color__heading: #000958;
+    --color__desc: #5e6085;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
@@ -41,6 +46,14 @@ html {
 
 a {
     text-decoration: none;
+}
+/* color */
+.section__heading {
+    font-weight: 700;
+    line-height: 62px;
+    font-size: 5.2rem;
+    text-align: center;
+    color: var(--color__heading);
 }
 
 .container {
@@ -399,4 +412,231 @@ a {
     top: 149px;
     right: 40px;
     z-index: -1;
+}
+
+.about__media-top {
+    margin-left: 108px;
+}
+
+.about__media-bottom {
+    width: 458px;
+    height: 500px;
+    background: #5bd6e2;
+    box-shadow: 0px 3px 63px 0px rgba(153, 183, 208, 0.59);
+}
+
+.about__decor-img {
+    position: absolute;
+    background: lightgray 50% / cover no-repeat;
+    box-shadow: 0px 3px 63px 0px rgba(153, 183, 208, 0.59);
+}
+
+.about__img-wrap-bottom {
+    position: relative;
+}
+
+.about__decor-img:nth-child(6) {
+    position: absolute;
+    top: 435px;
+    left: 377px;
+}
+
+.about__decor-img:nth-child(1) {
+    position: absolute;
+    top: 13px;
+    right: 65px;
+}
+
+.about__decor-img:nth-child(2) {
+    position: absolute;
+    top: -16px;
+    right: 16px;
+}
+
+.about__decor-img:nth-child(3) {
+    position: absolute;
+    top: 33px;
+    right: -21px;
+}
+
+.about__decor-img:nth-child(4) {
+    position: absolute;
+    top: 270px;
+    right: -10px;
+}
+
+.about__decor-img:nth-child(5) {
+    position: absolute;
+    top: 336px;
+    right: 19px;
+}
+
+/* about content 2 */
+
+.about__content-list {
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+
+.about__content-list::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 557px;
+    bottom: -10px;
+    background: #ccc;
+}
+
+.about__content-list::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 95px;
+    background: #ff5b2e;
+    opacity: 0.76;
+    bottom: -10px;
+}
+
+.about__content-item {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.about__content-item-name {
+    margin-left: 10px;
+}
+
+.about__desc-item {
+    margin-top: 32px;
+}
+
+.about__content-link {
+    display: inline-block;
+    margin-top: 38px;
+}
+
+.about__content-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: #ff5d31;
+}
+
+/* service */
+
+.service {
+    padding: 68px 0;
+    margin: 185px 0;
+    background: #fff6ed;
+}
+
+.service__desc {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--color__desc);
+    text-align: center;
+}
+
+.service__heading {
+    margin-top: 15px;
+}
+
+.service__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.service__columns {
+    display: grid;
+    row-gap: 24px;
+}
+
+.service__item {
+    padding: 30px 28px 30px 22px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    background: #fff;
+}
+
+.service-item__heading {
+    position: relative;
+    display: inline-block;
+    padding-left: 12px;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: var(--color__heading);
+}
+
+.service-item__heading::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    margin-left: -12px;
+    bottom: 0;
+    top: 0;
+    width: 2px;
+    height: 22px;
+    background: linear-gradient(63deg, #ff5b2e 0%, #ffa187 100%);
+}
+
+.service-item__desc {
+    padding-top: 18px;
+    font-size: 1.4rem;
+    font-weight: 44;
+    line-height: 24px;
+}
+
+.service-item__more {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding-top: 24px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--color__heading);
+}
+
+.ti-arrow-top-right {
+    color: #ff5b2e;
+}
+
+.service__body {
+    margin-top: 71px;
+}
+
+.service__columns:nth-child(2) {
+    margin-left: 64px;
+    margin-right: 71px;
+}
+
+.service__images {
+    position: relative;
+    z-index: 1;
+}
+
+.service__images::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 243px;
+    left: 22px;
+    width: 410px;
+    height: 350px;
+    z-index: -1;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #9df1fb 0%, #73d0db 100%);
+}
+
+.service-cta {
+    padding: 0 40px;
+}
+
+.service__btn {
+    position: relative;
+    top: 21px;
+    text-align: center;
 }
